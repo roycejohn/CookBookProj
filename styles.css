@@ -82,6 +82,24 @@
     height: 100%;
 }
 
+#recipe-card{
+    max-width: 60ch;
+}
+
+.readmore-btn {
+    text-decoration: none;
+    color: rgb(154, 197, 0);
+    font-weight: bold;
+}
+.readmore-btn i {
+    margin-left: 10px;
+    background-color: rgb(154, 197, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+
 /* RECIPE HOMEPAGE END */
 
 
