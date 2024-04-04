@@ -23,6 +23,58 @@
 
 /* RECIPE HOMEPAGE START */
 
+.recipe-heading {
+    color: black;
+    padding: 0 1em;
+    font-size: 1.3em;
+    text-align: center;
+    text-wrap: balance;
+  
+    @media screen and (min-width: 425px) {
+      font-size: 1.5em;
+    }
+  
+    @media screen and (min-width: 768px) {
+      font-size: 2em;
+    }
+}
+
+.recipe-wrapper {
+    margin: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.recipe-card {
+    max-width: 40ch;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 8px 15px rgba(15, 9, 8, 0.2);
+  
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+      transition: transform 0.2s ease-in-out;
+    }
+}
+
+.recipe-figure {
+    height: 70%;
+    overflow: hidden;
+}
+  
+.recipe-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.recipe-body {
+    padding: 0.5em 1em;
+}
 
 /* RECIPE HOMEPAGE END */
 
