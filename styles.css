@@ -40,13 +40,13 @@
     text-align: center;
     justify-content: center;
     line-height: 3vmin;
-    font-size: 1.5vw; 
+    font-size: 1.5vw;
 }
 
 #herobutton {
     margin-top: 1vw;
     min-width: 10vw;
-    min-height: 2vw;
+    min-height: 2vh;
     margin-bottom: 3vw;
     font-size: 90%;
 
