@@ -14,8 +14,9 @@ hero {
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 3px;
-    text-align: center;
     align-items: center;
+    text-align: center;
+    
 }
 
 
