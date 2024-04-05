@@ -10,15 +10,21 @@
 </head>
 <body>
     <header>
-        <nav class="flex items-center justify-between px-4 py-1">
+        <nav class="bg-blue-100 flex items-center justify-between px-4 py-1">
+            <div class="firstGroup flex items-center justify-between px-4">
             <div class="flex items-center">
                <img id="logo" src="./assets/logo.png">
             </div>
-            <ul>
-                <li> <a href="#"> Home </a></li>
+            <div class="nav-itemsParent flex pl-10">
+             <ul class="flex absolute top-12 space-x-10 mt-4 ">
+                <div class="nav-item">
+                   <li> <a href="#"> Home </a></li>
+                </div>
+                <div class="nav-item">
                 <li> <a href="#"> About </a></li>
-        
-                <li>
+                </div>
+                <div class="nav-item">
+                 <li>
                     <button class="bg-blue rounded inline-flex items-center">
                         <span> Recipees </span>
                         <svg class="fill-current w-4 h-4 ml-2" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -30,9 +36,12 @@
                             <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-indigo-500 hover:text-white">Option 3</a>
                         </div>
                     </button>   
-                </li>
-            </ul>
-            <div class="relative search-navbar">
+                 </li>
+                </div>
+             </ul>
+            </div>
+            </div>
+            <div class="relative top-0 search-navbar">
             
              <input type="text" id="search-navbar" class=" absolute block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search">
              <svg class="absolute w-4 h-4 left-3 top-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
