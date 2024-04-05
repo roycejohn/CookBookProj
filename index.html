@@ -3,12 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./styles.css">
-    <head>
-        <!-- Other meta tags and links -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-      </head>
-      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">     
     <title>CookBookProject</title>   
 </head>
 <body>
@@ -20,8 +17,43 @@
 
     </hero>
 
-    <main>  
-    <section class="feat-recipe">
+    <main> 
+        
+    <section class="p-[0.5rem] bg-lime-200 h-[100%] ">
+        <h2 class="py-[1em] text-center text-balance text-[1.3em] text-black text-base md:text-lg lg:text-xl">Feature Recipes</h2>
+        <div class="my-[3em] flex flex-wrap justify-center gap-[2em]"> 
+            <article id="" class="max-w-[80ch] overflow-hidden rounded-[5px] shadow-[2px_8px_15px_rgba(15,9,8,0.2)] cursor-pointer scale[1.02] element hover:scale-[1.02] transition-transform duration-[0.2] ease-in-out ">
+                <figure class="h-[70%] overflow-hidden">
+                    <img class="w-[100%] h-[100%] object-cover object-center"
+                         src="./assets/hunterChicken.jpg"
+                         alt="Recipe 2"/>
+               </figure>
+               <div class="p-[0.5em 1em]">
+                    <h2>Recipe #2</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus ab, delectus adipisci quod tempora incidunt repellat ullam veritatis
+                    </p>
+                    <a href="page.html" class="readmore-btn">Read more <i class="fas fa-chevron-right"></i></a>
+               </div>     
+            </article>
+            <article id="" class="max-w-[80ch] overflow-hidden rounded-[5px] shadow-[2px_8px_15px_rgba(15,9,8,0.2)] cursor-pointer scale[1.02] element hover:scale-[1.02] transition-transform duration-[0.2] ease-in-out ">
+                <figure class="h-[70%] overflow-hidden">
+                    <img class="w-[100%] h-[100%] object-cover object-center"
+                         src="./assets/BucatiniWithMushroom.jpg"
+                         alt="Recipe 4"/>
+               </figure>
+               <div class="p-[0.5em 1em]">
+                    <h2>Recipe #4</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus ab, delectus adipisci quod tempora incidunt repellat ullam veritatis
+                    </p>
+                    <a href="page.html" class="readmore-btn">Read more <i class="fas fa-chevron-right"></i></a>
+               </div>     
+            </article>
+        </div>
+    </section>
+
+
+
+    <!-- <section class="feat-recipe">
         <h2 class="recipe-heading">Feature Recipes</h2>
         <div class="recipe-wrapper"> 
             <article id="recipe-card" class="recipe-card">
@@ -35,9 +67,9 @@
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis possimus ab, delectus adipisci quod tempora incidunt repellat ullam veritatis
                     </p>
                     <a href="page.html" class="readmore-btn">Read more <i class="fas fa-chevron-right"></i></a>
-               </div>        
+               </div>     
             </article>
-            <article id="recipe-card" class="recipe-card">
+            <article class="recipe-card">
                 <figure class="recipe-figure">
                     <img class="recipe-image"
                          src="./assets/hunterChicken.jpg"
@@ -51,7 +83,7 @@
             </article>
         </div>
 
-    </section>
+    </section> -->
     <section class="list-recipe">
         <h2 class="recipe-heading">List of Recipes</h2>
         <div class="recipe-wrapper">
