@@ -10,8 +10,10 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img id="logo" src="./assets/logo.png">
+        <nav class="flex items-center justify-between px-4 py-1">
+            <div class="flex items-center">
+               <img id="logo" src="./assets/logo.png">
+            </div>
             <ul>
                 <li> <a href="#"> Home </a></li>
                 <li> <a href="#"> About </a></li>
@@ -30,7 +32,7 @@
                     </button>   
                 </li>
             </ul>
-            <div class="relative">
+            <div class="relative search-navbar">
             
              <input type="text" id="search-navbar" class=" absolute block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search">
              <svg class="absolute w-4 h-4 left-3 top-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
