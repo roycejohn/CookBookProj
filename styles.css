@@ -9,6 +9,9 @@
 
 /* HERO START */
 
+.herobackground {
+    background-image: url(.herobackground);
+}
 
 /* HERO END */
 
