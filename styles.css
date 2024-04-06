@@ -18,9 +18,25 @@
   
 }
 
+.wholeNav{
+    display:flex;
+  
+}
+
+.firstGroup{
+    justify-self: start;
+}
+
+
+
 .nav-itemsParent{
     display:flex;
     flex-direction: row;
+}
+
+.secondGroup{
+  
+    justify-self: end;
 }
 
 /* HEADER END */
