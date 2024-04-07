@@ -9,35 +9,7 @@
 
 /* HEADER START */
 
-#logo{
-    width: 150px;
-}
 
-.search-navbar{
-    width:30%;
-  
-}
-
-.wholeNav{
-    display:flex;
-  
-}
-
-.firstGroup{
-    justify-self: start;
-}
-
-
-
-.nav-itemsParent{
-    display:flex;
-    flex-direction: row;
-}
-
-.secondGroup{
-  
-    justify-self: end;
-}
 
 /* HEADER END */
 
