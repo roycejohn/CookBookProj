@@ -10,11 +10,22 @@
 /* HEADER START */
 
 
+
 /* HEADER END */
 
 
 
 /* HERO START */
+
+hero {
+    background-image: url(./assets/herobackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    align-items: center;
+    text-align: center;
+    
+}
 
 
 /* HERO END */
@@ -23,12 +34,110 @@
 
 /* RECIPE HOMEPAGE START */
 
+.recipe-heading {
+    color: rgb(5 150 105);
+    padding: 0 1em;
+    font-size: 1.3em;
+    font-weight: bolder;
+    text-align: center;
+    text-wrap: balance;
+    @media screen and (min-width: 425px) {
+      font-size: 1.5em;
+    }
+  
+    @media screen and (min-width: 768px) {
+      font-size: 2em;
+    }
+}
+
+.recipe-wrapper {
+    margin: 3em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.recipe-card {
+    max-width: 40ch;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 8px 15px rgba(15, 9, 8, 0.2);
+  
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.02);
+      transition: transform 0.2s ease-in-out;
+    }
+}
+
+.recipe-figure {
+    height: 70%;
+    overflow: hidden;
+}
+  
+.recipe-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.recipe-body {
+    padding: 0.5em 1em;
+}
+
+.feat-recipe{
+    padding: 0.5rem;
+    background-color: bisque;
+    height: 100%;
+}
+
+
+.readmore-btn {
+    text-decoration: none;
+    color: rgb(154, 197, 0);
+    font-weight: bold;
+}
+.readmore-btn i {
+    margin-left: 10px;
+    background-color: rgb(154, 197, 0);
+    color: white;
+    border-radius: 50%;
+    padding: 3px;
+}
+
 
 /* RECIPE HOMEPAGE END */
 
 
 
 /* FOOTER START */
+  
+   .footer-about, .footerfeatures, .footer-links, .footer-contact {
+    /* flex: 1; */
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+  .footerfeatures ul {
+    list-style: none;
+    padding: 0;}
+  
+  .footer-links ul li a {
+    color: #a1a1a4d3;
+    text-decoration: none;
+  }
+  
+  .footerfeatures ul li a {
+    color: #a1a1a4d3;
+    text-decoration: none;
+  }
+
 
 
 /* FOOTER END */
