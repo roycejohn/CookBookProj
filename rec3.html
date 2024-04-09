@@ -16,22 +16,22 @@
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1 ">
             <div class="flex content-center">
                 <img class="w-32"   src="./assets/logo.png" alt="Our Logo" >
-            <div class="flex ml-20">
-            <ul class="flex self-center no-wrap space-x-8 invisible md:visible font-semibold text-lg">
-                <li class="hover:text-red-500">
+            <div class="flex ml-20  md:visible">
+            <ul class="flex self-center no-wrap space-x-8 hidden md:inline-flex font-semibold text-lg">
+                <li class="hover:text-purple-700">
                     <a href="#">Home </a>
                 </li>
-                <li class="hover:text-red-500">
+                <li class="hover:text-purple-700">
                     <a href="#">Recipees </a>
                 </li>
-                <li class="hover:text-red-500">
+                <li class="hover:text-purple-700">
                     <a href="#">About</a>
                 </li>
              </ul>
             </div>
            </div>
            <!-- here goes the trial button -->
-           <div class="flex  lg:hidden md:order-2 mr-4">
+           <div class="flex  lg:hidden mr-4">
             <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
             <svg class="w-5 h-5 mr-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
@@ -57,7 +57,7 @@
           </button>
           </div>
            <!-- end of trial button -->
-            <section class="flex relative invisible md:visible">
+            <section class="flex relative hidden md:inline-flex">
             <div class=" searchBar relative top-0 search-navbar">
                 <input type="text" id="search-navbar" class=" relative block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search">
                 <svg class="absolute w-4 h-4 left-3 top-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -73,15 +73,15 @@
      
         </header>
 
-    <div class="container flex">
-      <div class="relative w-1/2 overflow-hidden bg-cover bg-no-repeat">
+    <div class="container lg:flex">
+      <div class="relative lg:w-1/2 mt-1 overflow-hidden bg-cover bg-no-repeat">
        <img class="" alt="image of a pizza" src="./assets/HomemadePizza.jpg">
        <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 transition duration-300 ease-in-out hover:opacity-70  flex justify-center items-center">
         <span class="text-center text-white text-6xl">Mamma mia!</span>
        </div>
       </div>
        <div class="second-column flex-column content-end pl-10">
-        <span> <h1 class=" ml-2 title text-4xl"> Home made Pizza</h1></span>
+        <span> <h1 class=" md:mt-10 ml-2 title text-4xl"> Home made Pizza</h1></span>
         <span class=" text-md"> <h2 class="ml-2"> Because classics never let you down </h2></span>
         <table class="mt-5 w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
           <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
@@ -116,7 +116,7 @@
           </table>
        </div>
        <!-- trial buttons -->
-       <div class=" self-end ml-10 sharing-buttons flex flex-wrap">
+       <div class="lg:self-end ml-10 sharing-buttons flex flex-wrap">
         <a class="border-4 duration-200 ease flex items-center mb-1 mr-1 transition p-1 rounded text-white border-blue-600 bg-blue-600 hover:bg-purple-700 hover:border-purple-700" target="_blank" rel="noopener" href="https://wa.me/?text=%20" aria-label="Share on Whatsapp" draggable="false">
           <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4">
             <title>Whatsapp</title>
