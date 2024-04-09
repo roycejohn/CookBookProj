@@ -74,12 +74,44 @@
         </header>
 
     <div class="container flex">
-       <img class="w-1/2 transition-all duration-300 cursor-pointer filter grayscale hover:grayscale-0" alt="image of a pizza" src="./assets/HomemadePizza.jpg">
-
-       <div class="second-column flex-column content-center pl-10">
-        <span class="title"> <h1> Home made Pizza</h1></span>
-        <span class="text"> <h2> Because classics never let you down </h2></span>
-        <section>table goes here</section>
+      <div class="relative w-1/2 overflow-hidden bg-cover bg-no-repeat">
+       <img class="" alt="image of a pizza" src="./assets/HomemadePizza.jpg">
+       <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 transition duration-300 ease-in-out hover:opacity-70"></div>
+      </div>
+       <div class="second-column flex-column content-end pl-10">
+        <span> <h1 class="title text-lg"> Home made Pizza</h1></span>
+        <span class="text-md"> <h2> Because classics never let you down </h2></span>
+        <table class="mt-5 w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr>
+                  <th class="px-6 py-3">Ingredients</th>
+                  <th  class="px-6 py-3">Amount</th>
+              </tr>
+          </thead>
+          <tbody class="">
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  <td  class="px-6 py-1">Flour</td>
+                  <td class="px-6 py-1" >250g</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                  <td class="px-6 py-1">Salt</td>
+                  <td class="px-6 py-1">150g</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                <td class="px-6 py-1">Yeast</td>
+                <td class="px-6 py-1">150g</td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <td class="px-6 py-1">Tomato Sauce</td>
+              <td class="px-6 py-1">50g</td>
+             </tr>
+             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <td class="px-6 py-1">Basilicum</td>
+            <td class="px-6 py-1">50g</td>
+             </tr>
+             
+          </tbody>
+      </table>
        </div>
     </div>
 
