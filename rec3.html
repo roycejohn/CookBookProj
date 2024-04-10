@@ -6,12 +6,15 @@
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">     
     <title>CookBookProject</title>   
 </head>
 <body>
     <header>
+
         <nav class="bg-blue-100 shadow-md sticky">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1 ">
             <div class="flex content-center">
@@ -25,20 +28,23 @@
                     <a href="#">Recipees </a>
                 </li>
                 <li class="hover:text-purple-700">
+
                     <a href="#">About</a>
                 </li>
              </ul>
             </div>
            </div>
            <!-- here goes the trial button -->
+
            <div class="flex  lg:hidden mr-4">
+
             <button type="button" data-collapse-toggle="navbar-search" aria-controls="navbar-search" aria-expanded="false" class="md:hidden text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5 mr-1" >
             <svg class="w-5 h-5 mr-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
             </svg>
             <span class="sr-only">Search</span>
           </button>
-            
+
             <button data-collapse-toggle="navbar-search" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-search" aria-expanded="false">
               <span class="sr-only">Open main menu</span>
               <svg class="w-5 h-5 " aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
@@ -47,7 +53,9 @@
           </button>
           </div>
            <!-- end of trial button -->
+
             <section class="flex relative hidden md:inline-flex">
+
             <div class=" searchBar relative top-0 search-navbar">
                 <input type="text" id="search-navbar" class=" relative block w-full p-2 pl-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search">
                 <svg class="absolute w-4 h-4 left-3 top-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -63,66 +71,156 @@
      
         </header>
 
-    <div class="container lg:flex">
-      <div class="relative lg:w-1/2 mt-1 overflow-hidden bg-cover bg-no-repeat">
-       <img class="" alt="image of a pizza" src="./assets/HomemadePizza.jpg">
-       <div class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 transition duration-300 ease-in-out hover:opacity-70  flex justify-center items-center">
-        <span class="text-center text-white text-6xl">Mamma mia!</span>
-       </div>
-      </div>
-       <div class="second-column flex-column content-end pl-10">
-        <span> <h1 class=" md:mt-10 ml-2 title text-4xl"> Home made Pizza</h1></span>
-        <span class=" text-md"> <h2 class="ml-2"> Because classics never let you down </h2></span>
-        <table class="mt-5 w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
-              <tr>
-                  <th class="px-6 py-3">Ingredients</th>
-                  <th  class="px-6 py-3">Amount</th>
-              </tr>
-          </thead>
-          <tbody class="">
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                  <td  class="px-6 py-1">Flour</td>
-                  <td class="px-6 py-1" >250g</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                  <td class="px-6 py-1">Salt</td>
-                  <td class="px-6 py-1">150g</td>
-              </tr>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <td class="px-6 py-1">Yeast</td>
-                <td class="px-6 py-1">150g</td>
-            </tr>
-            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-              <td class="px-6 py-1">Tomato Sauce</td>
-              <td class="px-6 py-1">50g</td>
-             </tr>
-             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-            <td class="px-6 py-1">Basilicum</td>
-            <td class="px-6 py-1">50g</td>
-             </tr>
-             
-          </tbody>
-          </table>
-       </div>
-       <!-- trial buttons -->
-       <div class="lg:self-end ml-10 sharing-buttons flex flex-wrap">
-        <a class="border-4 duration-200 ease flex items-center mb-1 mr-1 transition p-1 rounded text-white border-blue-600 bg-blue-600 hover:bg-purple-700 hover:border-purple-700" target="_blank" rel="noopener" href="https://wa.me/?text=%20" aria-label="Share on Whatsapp" draggable="false">
-          <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4">
-            <title>Whatsapp</title>
-            <path d="M413 97A222 222 0 0 0 64 365L31 480l118-31a224 224 0 0 0 330-195c0-59-25-115-67-157zM256 439c-33 0-66-9-94-26l-7-4-70 18 19-68-4-7a185 185 0 0 1 287-229c34 36 56 82 55 131 1 102-84 185-186 185zm101-138c-5-3-33-17-38-18-5-2-9-3-12 2l-18 22c-3 4-6 4-12 2-32-17-54-30-75-66-6-10 5-10 16-31 2-4 1-7-1-10l-17-41c-4-10-9-9-12-9h-11c-4 0-9 1-15 7-5 5-19 19-19 46s20 54 23 57c2 4 39 60 94 84 36 15 49 17 67 14 11-2 33-14 37-27s5-24 4-26c-2-2-5-4-11-6z">
-            </path>
-          </svg>
-        </a>
-        <a class=" ml-2 border-4 duration-200 ease inline-flex items-center mb-1 mr-1 transition p-1 rounded text-white border-blue-600 bg-blue-600 hover:bg-purple-700 hover:border-purple-700 " target="_blank" rel="noopener" href="https://telegram.me/share/url?text=&amp;url=" aria-label="Share on Telegram" draggable="false">
-          <svg aria-hidden="true" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-4 h-4">
-            <title>Telegram</title>
-            <path d="M256 8a248 248 0 1 0 0 496 248 248 0 0 0 0-496zm115 169c-4 39-20 134-28 178-4 19-10 25-17 25-14 2-25-9-39-18l-56-37c-24-17-8-25 6-40 3-4 67-61 68-67l-1-4-5-1q-4 1-105 70-15 10-27 9c-9 0-26-5-38-9-16-5-28-7-27-16q1-7 18-14l145-62c69-29 83-34 92-34 2 0 7 1 10 3l4 7a43 43 0 0 1 0 10z">
-            </path>
-          </svg>
-        </a>
-      </div>
-    </div>
+
+        <body>
+        <div class="grid grid-cols-5">
+            <div class="col-span-2">
+                <div class="m-4"><img class="shadow-lg" src="./assets/chorizo-mozarella-gnocchi-bake-cropped-9ab73a3.jpg">
+                </div>
+                <div class="flex justify-center items-center flex-col">
+                    <h3 class="m-4 text-balance text-green-600 text-2xl font-semibold">What do you need?</h3>
+                    <table class="shadow-lg bg-white table-auto border m-4 mb-7">
+                        <tr>
+                          <th class="bg-green-400 border text-left px-1 py-1">Ingredient</th>
+                          <th class="bg-green-400 border text-left px-1 py-1">Amount</th>
+                          <th class="bg-green-400 border text-left px-1 py-1">Remarks</th>
+                        </tr>
+                        <tr>
+                          <td class="border px-1 py-1">olive oil</td>
+                          <td class="border px-1 py-1">1 tbsp</td>
+                          <td class="border px-1 py-1">-</td>
+                        </tr>
+                        <tr>
+                          <td class="border px-1 py-1">onion</td>
+                          <td class="border px-1 py-1">1</td>
+                          <td class="border px-1 py-1">finely chopped</td>
+                        </tr>
+                        <tr>
+                          <td class="border px-1 py-1">garlic cloves</td>
+                          <td class="border px-1 py-1">2</td>
+                          <td class="border px-1 py-1">crushed</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-1 py-1">chorizo</td>
+                            <td class="border px-1 py-1">120g</td>
+                            <td class="border px-1 py-1">diced</td>
+                          </tr>
+                          <tr>
+                            <td class="border px-1 py-1">tomatoes</td>
+                            <td class="border px-1 py-1">800g</td>
+                            <td class="border px-1 py-1">2 cans x 400g</td>
+                          </tr>
+                          <tr>
+                            <td class="border px-1 py-1">caster sugar</td>
+                            <td class="border px-1 py-1">1 tbsp</td>
+                            <td class="border px-1 py-1">crushed</td>
+                          </tr>
+                          <tr>
+                            <td class="border px-1 py-1">garlic cloves</td>
+                            <td class="border px-1 py-1">2</td>
+                            <td class="border px-1 py-1">-</td>
+                          </tr>
+                          <tr>
+                            <td class="border px-1 py-1">gnocchi</td>
+                            <td class="border px-1 py-1">600g</td>
+                            <td class="border px-1 py-1">fresh</td>
+                          </tr>
+                          <tr>
+                            <td class="border px-1 py-1">mozzarella ball</td>
+                            <td class="border px-1 py-1">125g</td>
+                            <td class="border px-1 py-1">cut into chunks</td>
+                          </tr>
+                          <tr>
+                            <td class="border px-1 py-1">basil</td>
+                            <td class="border px-1 py-1">small bunch</td>
+                            <td class="border px-1 py-1">torn</td>
+                          </tr>
+                      </table>
+                </div>
+        
+            </div>
+
+            <div class="h-fit grid gap-y-1 col-span-3 ml-9 mr-5 my-1">
+                <div class="h-fit">
+                    <h2 class="text-center py-[1em] text-balance text-green-600 text-4xl font-semibold">Chorizo mozarella gnocchi</h2>         
+                    
+                    <p class="m-4">Gnocchi baked in tomato sauce with chorizo and mozzarella is a delicious idea for a warming and filling one-pot dinner.
+                    </br>Tender potato gnocchi noodles are bathed in a tomato sauce full of herbs, topped with mega-flavorful chorizo sausage, baked under crispy-pulled mozzarella. That is, the perfect dinner does exist after all.
+                    </p>
+                </div>
+
+                <div class="h-fit">
+                    <h3 class="m-4 text-balance text-green-600 text-2xl font-semibold text-center mt-7">Method</h3>
+                 <p class="m-3">
+                    STEP 1
+                    <br>
+                    Heat the oil in a medium pan over a medium heat. Fry the onion and garlic for 8-10 mins until soft. Add the chorizo and fry for 5 mins more. Tip in the tomatoes and sugar, and season. Bring to a simmer, then add the gnocchi and cook for 8 mins, stirring often, until soft. Heat the grill to high.
+                </p>
+                    
+                 <p class="m-3">
+                    STEP 2
+                    <br>
+                    Stir ¾ of the mozzarella and most of the basil through the gnocchi. Divide the mixture between six ovenproof ramekins, or put in one baking dish. Top with the remaining mozzarella, then grill for 3 mins, or until the cheese is melted and golden. Season, scatter over the remaining basil and serve with green salad.
+                </p>
+                <h4 class="m-8 text-balance text-green-600 text-lg text-center">-enjoy -</h4>
+                </div>
+            </div>
+
+
+            
+        
+            </div>
+
+            <footer class ="bg-black text-white px-8" id="footerbackground">
+    
+                <div class="grid gap-10 mb-8 sm:grid-cols-3 lg:grid-cols-5">
+                    
+                    <div class="footer-about text-base sm:col-span-2">
+                      <h4 class="text-2xl py-4">About Us</h4>
+                      <p class="text-sm">Embark on a culinary adventure around the world with our delicious recipes! We'll help you whip up amazing meals and transform you into a home cook you can be proud of. Discover your new favorites and become a kitchen hero!</p>
+                    </div>
+            
+                    <div class="footerfeatures w-1/5">
+                        <h4 class="text-2xl py-3">Features</h4>
+                        <ul class="text-sm">
+                            <li><a href="#">Favourite recipes</a></li>
+                            <li><a href="#">Organise & Search</a></li>
+                            <li><a href="#">Plan & Shop</a></li>
+                            <li><a href="#">Grocery lists</a></li>
+                          </ul>
+                     </div>
+            
+                    <div class="footer-links text-base w-1/5">
+                      <h4 class="text-2xl py-3">Quick Links</h4>
+                      <ul class="text-sm">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#">Legal</a></li>
+                      </ul>
+                    </div>
+            
+                    <div class="footer-contact w-1/5">
+                      <h4 class="text-2xl py-3">Contact Us</h4>
+                      <p class="text-sm"> Email: info@example.com</p>
+                      <p class="text-sm"> Phone: +123 456 7890</p>
+                    </div>
+            
+                  </div>
+            
+                <div class="flex flex-col justify-center items-center">  
+                    <div class="min-h-20 flex justify-center">  
+                        <button class="basis-1/7 w-48 h-4 rounded-lg outline-2 p-0 mx-4 **my-auto**"><img src="./assets/app store.png"></button>
+                        <button class="basis-1/7 w-48 h-4 rounded-lg outline-2 p-0 mx-4 **my-auto**"><img src="./assets/google play.png"></button>
+                    </div>
+                  <div class="text-center mt-4 min-h-8">  <p>Use of this site constitutes acceptance of its <a href="#" class="text-decoration-line: underline">User Agreement</a> and <a href="#" class="text-decoration-line: underline">Privacy Policy</a>.</p>
+                  </div>
+                </div>
+            
+                </div>
+            </body>
+                 
+                </footer>
 
 </body>
 </html>
